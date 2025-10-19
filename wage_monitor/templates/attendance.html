@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Attendance</title>
+</head>
+<body>
+    <h2>Add Attendance</h2>
+    <form method="POST">
+        <label>Date:</label>
+        <input type="date" name="date" id="date" required><br><br>
+
+        <label>Hours Worked:</label>
+        <input type="number" name="hours" step="0.1" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('date').valueAsDate = new Date();
+    </script>
+</body>
+</html>

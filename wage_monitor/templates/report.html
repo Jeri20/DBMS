@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wage Report</title>
+</head>
+<body>
+    <h1>Report for {{ worker[0] }}</h1>
+    <p>Wage per Hour: {{ worker[1] }}</p>
+    <h2>Attendance</h2>
+    <table border="1">
+        <tr><th>Date</th><th>Hours Worked</th></tr>
+        {% for a in attendance %}
+        <tr>
+            <td>{{ a[0] }}</td>
+            <td>{{ a[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p>Total Paid: {{ total_paid }}</p>
+    <p>Pending Payment: {{ pending }}</p>
+    <a href="/">Back</a>
+</body>
+</html>
