@@ -1,0 +1,122 @@
+/* Body & font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #14274E, #394867);
+    color: #F0F4F8;
+    margin: 30px;
+}
+
+/* Headings */
+h1, h2 {
+    color: #00B7C2;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+/* Links */
+a {
+    color: #00B7C2;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #90e0ef;
+    text-decoration: underline;
+}
+
+/* Container card for contents */
+form, table, .container {
+    background-color: #1E2A47;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 183, 194, 0.4);
+    margin-top: 20px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    color: #00B7C2;
+    font-weight: 600;
+    font-size: 1.1em;
+    border-bottom: 2px solid #005F73;
+}
+
+tr {
+    background-color: #243B55;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+tr:hover {
+    background-color: #005F73;
+}
+
+/* Form labels & inputs */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #90e0ef;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #334B68;
+    color: #f0f4f8;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    background-color: #005F73;
+    outline: none;
+}
+
+input[readonly] {
+    background-color: #243B55;
+    cursor: not-allowed;
+}
+
+/* Buttons */
+button, input[type="submit"] {
+    margin-top: 20px;
+    background: linear-gradient(45deg, #00B7C2, #005F73);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,183,194,0.5);
+    transition: background 0.4s ease;
+}
+button:hover, input[type="submit"]:hover {
+    background: linear-gradient(45deg, #007D8E, #004754);
+}
+
+/* Responsive container */
+.container {
+    max-width: 960px;
+    margin: auto;
+}
