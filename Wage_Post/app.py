@@ -149,5 +149,8 @@ def getworkerinfo(workerid):
     return jsonify(hourlywage=worker[0] if worker else 0, hoursworked=totalhours)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Get PORT from environment or use 5000
+    app.run(host="0.0.0.0", port=port, debug=True)  # Bind to all interfaces and provided port
+
+
 
