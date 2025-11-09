@@ -5,7 +5,7 @@ from datetime import date
 
 app = Flask(__name__)
 
-DATABASE_URL = os.environ.get('postgresql://dbuser:14cIEAPaCvkcxDLjEu1M4FnJsBNE4c3L@dpg-d487c06r433s739tb61g-a/wage_db_ppe4')  # Set Render's Postgres connection string
+DATABASE_URL = os.environ.get('DATABASE_URL')  # Set Render's Postgres connection string
 
 def get_db_connection():
     conn = psycopg2.connect(DATABASE_URL)
@@ -150,3 +150,4 @@ def getworkerinfo(workerid):
 
 if __name__ == "__main__":
     app.run(debug=True)
+
